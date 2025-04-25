@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คิด คนขายประกัน - ที่ปรึกษาประกันภัยครบวงจร</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .header {
+            background-color: #0054A6;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #FFD100;
+            color: #0054A6;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .benefit-item {
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>คิด คนขายประกัน</h1>
+        <p>ที่ปรึกษาประกันภัยครบวงจร ด้วยใจบริการ</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>ยินดีให้คำปรึกษาด้านประกันภัยทุกประเภท</h2>
+            <p>ผมกำลังก้าวสู่การเป็นตัวแทน Allianz อย่างมืออาชีพ พร้อมใบอนุญาต IC ที่กำลังจะได้รับในเร็วนี้</p>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <h3>🏠 ประกันวินาศภัย</h3>
+                    <p>รถยนต์/อัคคีภัย/อุบัติเหตุ</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>❤️ ประกันชีวิต</h3>
+                    <p>แนะนำแผนความคุ้มครองชีวิต และสุขภาพ</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>💰 ประกันออมทรัพย์</h3>
+                    <p>แนะนำแผนการออมระยะยาว</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>รับคำปรึกษาฟรีวันนี้!</h2>
+            <form action="YOUR_FORM_ENDPOINT" method="POST">
+                <div class="form-group">
+                    <label>ชื่อ-สกุล</label>
+                    <input type="text" name="name" placeholder="ชื่อ-สกุลของคุณ" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>เบอร์โทรศัพท์</label>
+                    <input type="tel" name="phone" placeholder="081-234-5678" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>อีเมล</label>
+                    <input type="email" name="email" placeholder="email@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label>สนใจประกันประเภทใด</label>
+                    <select name="insurance_type" required>
+                        <option value="">เลือกประเภทประกัน</option>
+                        <option value="health">ประกันสุขภาพ</option>
+                        <option value="life">ประกันชีวิต</option>
+                        <option value="savings">ประกันออมทรัพย์</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>ข้อความเพิ่มเติม</label>
+                    <textarea name="message" rows="4" placeholder="รายละเอียดเพิ่มเติม"></textarea>
+                </div>
+                
+                <button type="submit">ส่งข้อมูลเพื่อรับคำปรึกษา</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>ทำไมต้องเลือกเรา?</h2>
+            <ul>
+                <li>✅ ที่ปรึกษามือใหม่ไฟแรงพร้อมพัฒนาตนเองอย่างต่อเนื่อง</li>
+                <li>✅ ทำงานกับ Allianz บริษัทประกันภัยระดับโลก</li>
+                <li>✅ ให้คำปรึกษาอย่างตรงไปตรงมา เป็นกันเอง</li>
+                <li>✅ นว. เลขที่บัตร 6404002319 ตัวแทนประกันชีวิต เลขที่บัตร 6801020314 </li>
+                <li>✅ กำลังดำเนินการรับใบอนุญาต IC เรียบร้อยแล้ว</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 2rem; background-color: #0054A6; color: white;">
+        <p>© 2023 คิด คนขายประกัน | ตัวแทน Allianz ประเทศไทย | กำลังดำเนินการรับใบอนุญาต IC</p>
+        <p>ติดต่อ: 061-329-8555 | Line ID: @ReachKyth</p>
+    </footer>
+</body>
+</html>
